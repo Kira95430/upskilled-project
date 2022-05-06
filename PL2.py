@@ -1,19 +1,12 @@
 #Part of Pig latin program
-
-    # if first letter is a consonant
-    if first in consonant:
-        result = rest + "-" + first + "ay"
-        PigLatin = result
-        print('The world in PigLatin is:', PigLatin.lower(),".", d1, t1)
-
-    # if first letter is a vowel
-    elif first in vowel:
+   
+    If first in vowel:
         result = word + "-" + "way"
         PigLatin = result
         print('The world in PigLatin is:', PigLatin.lower(),".", d1, t1)
         #test
 
-    # If first letter is neither a vowel nor a consonant
+    
     else:
         print("I don't know what first letter is",".", d1, t1)
 
