@@ -1,11 +1,3 @@
-from datetime import date, time
-
-#Creating a date object
-d1 = date.today()
-
-#Creating a time object
-t1 = time(12,30,00)
-
 print("Welcome to Pig Latin!")
 
 def main():
@@ -23,17 +15,17 @@ def main():
     if first in consonant:
         result = rest + "-" + first + "ay"
         PigLatin = result
-        print('The world in PigLatin is:', PigLatin.lower(),".", d1, t1)
+        print('The world in PigLatin is:', PigLatin.lower(),".")
 
     # if first letter is a vowel
     elif first in vowel:
         result = word + "-" + "way"
         PigLatin = result
-        print('The world in PigLatin is:', PigLatin.lower(),".", d1, t1)
+        print('The world in PigLatin is:', PigLatin.lower(),".")
 
     # If first letter is neither a vowel nor a consonant
     else:
-        print("I don't know what first letter is",".", d1, t1)
+        print("I don't know what first letter is",".")
 
     # Restarting the program if the user wants to translate another word
     restart = input("Write 'yes' if you wish to translate another word: ").lower()
