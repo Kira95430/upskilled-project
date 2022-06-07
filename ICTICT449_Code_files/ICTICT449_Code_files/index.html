@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TTF Test website</title>
+    <script>
+        function selectMultiple() {
+            document.getElementById("mySelect").multiple = true;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Welcome to TTF test website. This website will help you to select the pegs you like</h1>
+<img src="images/pegs2.jpg" height="200" width="300">
+    <form>
+        <select id="mySelect" size="4">
+            <option>Pegs 1</option>
+            <option>Pegs 2</option>
+            <option>Pegs 3</option>
+            <option>Pegs 4</option>
+        </select>
+        <input type="button" onclick="selectMultiple()" value="Select multiple">
+    </form>
+
+    <p>If you want to select pegs, you should click "Select Multiple" first (by holding down the Shift or Ctrl
+        key).</p>
+    <p>After you have clicked "Select multiple", you can select multiple pegs.</p>
+
+</body>
+
+</html>
